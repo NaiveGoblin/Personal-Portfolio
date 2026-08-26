@@ -1,0 +1,708 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+
+/* ============================= */
+/* Base                          */
+/* ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*outline: 1px solid red;*/
+}
+
+body {
+    color: white;
+    background: #0B0B0B;
+}
+
+
+/* ============================= */
+/* Header                        */
+/* ============================= */
+
+header {
+    width: 100%;
+    padding: 25px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    text-align: center;
+    list-style: none;
+}
+
+.header_spacer {
+    margin: 0 30px;
+}
+
+
+/* ============================= */
+/* Hero                          */
+/* ============================= */
+
+.Hero {
+    width: 100%;
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 140px 60px 80px;
+
+    background-image: url("/images/wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+.Hero::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(11, 11, 11, 0.92) 0%,
+            rgba(11, 11, 11, 0.72) 45%,
+            rgba(11, 11, 11, 0.35) 100%
+        );
+
+    pointer-events: none;
+}
+
+.Hero_Content {
+    width: min(1200px, 100%);
+
+    position: relative;
+    z-index: 1;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+
+    align-items: start;
+}
+
+
+/* ============================= */
+/* Hero Text                     */
+/* ============================= */
+
+.Hero_Text {
+    max-width: 560px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.Hero_Text .Section_Label {
+    margin-bottom: 25px;
+
+    color: #777;
+
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+}
+
+.Hero_Text h1 {
+    margin-bottom: 30px;
+
+    color: #fff;
+
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(3rem, 6vw, 5rem);
+    font-weight: 600;
+    line-height: 0.92;
+    letter-spacing: -0.045em;
+}
+
+.Hero_Text p {
+    max-width: 520px;
+
+    margin-bottom: 16px;
+
+    color: #aaa;
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.Hero_Text .Section_Meta {
+    margin-top: 12px;
+
+    color: #666;
+
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+}
+
+
+/* ============================= */
+/* Hero Button                   */
+/* ============================= */
+
+.Hero_Buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+
+.Hero_Text button {
+    width: fit-content;
+    padding: 14px 28px;
+
+    color: #f5f5f5;
+    background: rgba(11, 11, 11, 0.35);
+
+    border: 1px solid #444;
+    border-radius: 8px;
+
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+
+
+.Hero_Text button:hover {
+    background: #1a1a1a;
+    border-color: #666;
+
+    transform: translateY(-2px);
+}
+
+.Hero_Text button:active {
+    transform: translateY(0);
+}
+
+
+
+/* ============================= */
+/* Hero Visual                   */
+/* ============================= */
+
+.Hero_Visual {
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+/* ============================= */
+/* Mascot                        */
+/* ============================= */
+
+.Mascot {
+    width: 300px;
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 25px;
+
+    color: #444;
+    background: rgba(17, 17, 17, 0.7);
+
+    border: 1px solid #292929;
+    border-radius: 20px;
+
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 60px;
+
+    overflow: hidden;
+}
+
+.Mascot img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* ============================= */
+/* Tags                          */
+/* ============================= */
+
+.Tag_Groups {
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.Tag_Group {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+.Tag_Label {
+    color: #666;
+
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.08em;
+}
+
+.Tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 6px;
+}
+
+.Tags span {
+    padding: 6px 9px;
+
+    color: #888;
+    background: rgba(17, 17, 17, 0.7);
+
+    border: 1px solid #292929;
+    border-radius: 5px;
+
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.Tags span:hover {
+    color: #ccc;
+    background: #151515;
+    border-color: #444;
+}
+
+
+/* ============================= */
+/* Website Body                  */
+/* ============================= */
+
+.Website_Body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Website_Body > * {
+    margin: 25px 0;
+}
+
+
+/* ============================= */
+/* Gallery                       */
+/* ============================= */
+
+.Gallery {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+
+    overflow: hidden;
+}
+
+.Gallery_Row {
+    width: 100%;
+    overflow: hidden;
+}
+
+.Gallery_Images {
+    width: max-content;
+
+    display: flex;
+    gap: 15px;
+}
+
+.Gallery img {
+    width: auto;
+    height: 150px;
+
+    aspect-ratio: 16 / 9;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    flex-shrink: 0;
+}
+
+.Gallery_Row_1 .Gallery_Images {
+    animation: slideRight 60s linear infinite alternate;
+}
+
+.Gallery_Row_2 .Gallery_Images {
+    animation: slideLeft 75s linear infinite alternate;
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* ============================= */
+/* Values                        */
+/* ============================= */
+
+.Values {
+    width: 1100px;
+
+    display: flex;
+    gap: 20px;
+}
+
+.Value_Card {
+    width: 350px;
+    height: 400px;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+    background: #151515;
+
+    border: 1px solid #292929;
+}
+
+.Value_Card span {
+    color: #666;
+
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+}
+
+.Value_Card h3 {
+    margin-top: 30px;
+
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 28px;
+}
+
+.Value_Card p {
+    margin-top: auto;
+
+    color: #888;
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* ============================= */
+/* Contact                       */
+/* ============================= */
+
+.Contact {
+    width: min(1500px, calc(100% - 40px));
+    height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 50px;
+
+    color: white;
+    background: #151515;
+
+    border: 1px solid #292929;
+    border-radius: 15px;
+}
+
+.Contact_Info {
+    width: 600px;
+}
+
+.Contact_Info h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 36px;
+}
+
+.Contact_Info p {
+    margin-top: 15px;
+
+    color: #888;
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.Contact_Actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    gap: 15px;
+}
+
+.Contact_Actions a {
+    margin: auto;
+
+    color: #ddd;
+
+    font-family: 'Space Grotesk', sans-serif;
+    text-decoration: none;
+}
+
+.Contact_Actions a:hover {
+    color: #8da4ff;
+}
+
+.Contact_Actions button {
+    padding: 12px 20px;
+
+    color: white;
+    background: transparent;
+
+    border: 1px solid #444;
+    border-radius: 7px;
+
+    font-family: 'Space Grotesk', sans-serif;
+
+    cursor: pointer;
+}
+
+.Contact_Actions button:hover {
+    background: #222;
+    border-color: #666;
+}
+
+
+/* ============================= */
+/* Footer                        */
+/* ============================= */
+
+.Footer {
+    width: 100%;
+
+    margin-top: 50px;
+    padding: 60px 80px 25px;
+
+    color: white;
+
+    border-top: 1px solid #292929;
+
+    font-family: 'Manrope', sans-serif;
+}
+
+.Footer_Main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer_Brand h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 28px;
+}
+
+.Footer_Brand p {
+    margin-top: 5px;
+    color: #777;
+}
+
+.Footer_Links {
+    display: flex;
+    gap: 100px;
+}
+
+.Footer_Navigation,
+.Footer_Socials {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.Footer a {
+    color: #888;
+
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.Footer a:hover {
+    color: white;
+}
+
+.Footer_Bottom {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 60px;
+    padding-top: 20px;
+
+    color: #555;
+
+    border-top: 1px solid #222;
+
+    font-size: 12px;
+}
+
+
+/* ============================= */
+/* Mobile                        */
+/* ============================= */
+
+@media (max-width: 800px) {
+
+    .Hero {
+        min-height: 100vh;
+
+        padding: 120px 25px 50px;
+    }
+
+    .Hero::after {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(11, 11, 11, 0.55) 0%,
+                rgba(11, 11, 11, 0.82) 50%,
+                rgba(11, 11, 11, 0.98) 100%
+            );
+    }
+
+    .Hero_Content {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .Hero_Text {
+        max-width: none;
+    }
+
+    .Hero_Text h1 {
+        font-size: clamp(3rem, 13vw, 5rem);
+    }
+
+    .Hero_Text p {
+        font-size: 14px;
+    }
+
+    .Hero_Visual {
+        min-height: auto;
+        align-items: flex-start;
+    }
+
+    .Mascot {
+        width: 220px;
+        height: 220px;
+        margin-bottom: 20px;
+    }
+
+    .Tag_Groups {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .Values {
+        width: calc(100% - 30px);
+
+        flex-direction: column;
+    }
+
+    .Value_Card {
+        width: 100%;
+    }
+
+    .Contact {
+        width: calc(100% - 30px);
+        height: auto;
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 35px;
+
+        padding: 30px;
+    }
+
+    .Contact_Info {
+        width: 100%;
+    }
+
+    .Contact_Actions {
+        align-items: flex-start;
+    }
+
+    .Footer {
+        padding: 50px 25px 25px;
+    }
+
+    .Footer_Main {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .Footer_Links {
+        gap: 60px;
+    }
+
+    .Footer_Bottom {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
