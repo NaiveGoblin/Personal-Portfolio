@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             </div>
 
-            <form class="Contact_Form" action="https://formsubmit.co/naivebusinessgoblin@gmail.com" method="POST">
+            <form class="Contact_Form" action="https://formsubmit.co/5c6235fb87763499c92dcf9d8063c66c" method="POST">
 
                 <div class="Contact_Form_Row">
 
