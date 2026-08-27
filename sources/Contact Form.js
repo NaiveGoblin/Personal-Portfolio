@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             </div>
 
-            <form class="Contact_Form">
+            <form class="Contact_Form" action="https://formsubmit.co/naivebusinessgoblin@gmail.com" method="POST">
 
                 <div class="Contact_Form_Row">
 
@@ -70,6 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <span>Message</span>
 
                     <textarea
+                        type="text"
                         name="message"
                         rows="6"
                         placeholder="Tell me a little about your project..."
