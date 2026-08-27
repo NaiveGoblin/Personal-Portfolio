@@ -77,6 +77,8 @@ document.addEventListener("DOMContentLoaded", () => {
                         required></textarea>
                 </label>
 
+                <input type="hidden" name="_next" value="https://naivegoblin.github.io/Personal-Portfolio/">
+
                 <button
                     class="Contact_Form_Submit"
                     type="submit">
