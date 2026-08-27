@@ -26,61 +26,64 @@
 
 
     <main class="Projects_Page">
-
         <div class="Container">
-
             <header class="Projects_Header">
-
-                <span class="Section_Label">
-                    02 / Projects
-                </span>
-
-                <h1>
-                    Things I've<br>made.
-                </h1>
-
+                <span class="Section_Label">02 / Projects</span>
+                <h1>Things I've<br>made.</h1>
                 <p>
                     A collection of websites, experiments, and other
                     things I've built along the way.
                 </p>
-
             </header>
 
 
             <section class="Projects_Grid">
-
                 <article class="Project_Card">
-
                     <div class="Project_Image">
                         <img src="images/project1.jpg" alt="Project preview">
                     </div>
-
                     <span class="Project_Number">01</span>
-
                     <h2>Project Name</h2>
-
                     <p>
                         A short description of the project.
                         Explain what it is, what you built,
                         and what makes it interesting.
                     </p>
-
                     <div class="Tags Project_Tags">
                         <span>HTML / CSS</span>
                         <span>JavaScript</span>
                     </div>
-
                     <a class="Project_Link" href="project_page.html">
                         View project →
                     </a>
-
                 </article>
-
             </section>
 
         </div>
 
     </main>
+
+    <section class="Contact" id="contact">
+
+            <div class="Contact_Info">
+                <h2>Let's talk.</h2>
+                <p>
+                    Have a project in mind, an idea you want to explore,
+                    or just want to say hello?
+                </p>
+            </div>
+
+            <div class="Contact_Actions">
+                <a href="mailto:you@example.com">
+                    you@example.com
+                </a>
+
+                <a class="Button" type="button" onclick="openContactModal()">
+                    Send a message →
+                </a>
+            </div>
+
+        </section>
 
 
     <footer class="Footer">
@@ -95,13 +98,13 @@
             <div class="Footer_Links">
 
                 <div class="Footer_Navigation">
-                    <a href="index.html">About me</a>
-                    <a href="index.html#contact">Contact</a>
+                    <a href="#about">About me</a>
+                    <a Href="#" onclick="openContactModal()">Contact</a>
                     <a href="projects.html">Projects</a>
                 </div>
 
                 <div class="Footer_Socials">
-                    <a href="https://github.com/yourusername">GitHub</a>
+                    <a href="https://github.com/NaiveGoblin">GitHub</a>
                     <a href="https://linkedin.com/in/yourusername">LinkedIn</a>
                 </div>
 
@@ -116,5 +119,7 @@
 
     </footer>
 
+
+    <script src="sources/Contact Form.js"></script>
 </body>
 </html>

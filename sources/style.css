@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 
-/* =================================
-   Variables
-   ================================= */
+/* Variables */
 
 :root {
     --bg: #0b0b0b;
@@ -33,9 +31,7 @@
 }
 
 
-/* =================================
-   Reset / Base
-   ================================= */
+/* Base */
 
 * {
     box-sizing: border-box;
@@ -81,9 +77,7 @@ a {
 }
 
 
-/* =================================
-   Shared Typography
-   ================================= */
+/* Typography */
 
 .Section_Label {
     color: #aaa;
@@ -109,9 +103,7 @@ a {
 }
 
 
-/* =================================
-   Header
-   ================================= */
+/* Header */
 
 .Header {
     position: absolute;
@@ -172,9 +164,7 @@ a {
 }
 
 
-/* =================================
-   Hero
-   ================================= */
+/* Hero */
 
 .Hero {
     position: relative;
@@ -224,9 +214,7 @@ a {
 }
 
 
-/* =================================
-   Hero Text
-   ================================= */
+/* Hero Text */
 
 .Hero_Text {
     display: flex;
@@ -267,9 +255,7 @@ a {
 }
 
 
-/* =================================
-   Hero Buttons
-   ================================= */
+/* Buttons */
 
 .Hero_Buttons {
     display: flex;
@@ -320,9 +306,7 @@ a {
 }
 
 
-/* =================================
-   Hero Visual
-   ================================= */
+/* Hero Visual */
 
 .Hero_Visual {
     display: flex;
@@ -361,9 +345,7 @@ a {
 }
 
 
-/* =================================
-   Tags
-   ================================= */
+/* Tags */
 
 .Tag_Groups {
     display: flex;
@@ -410,9 +392,7 @@ a {
 }
 
 
-/* =================================
-   Website Body
-   ================================= */
+/* Website Body */
 
 .Website_Body {
     display: flex;
@@ -423,9 +403,7 @@ a {
 }
 
 
-/* =================================
-   Gallery
-   ================================= */
+/* Gallery */
 
 .Gallery {
     display: flex;
@@ -491,9 +469,7 @@ a {
 }
 
 
-/* =================================
-   Contact
-   ================================= */
+/* Contact */
 
 .Contact {
     display: flex;
@@ -502,6 +478,7 @@ a {
 
     width: min(var(--container), calc(100% - 40px));
     min-height: 300px;
+    margin-inline: auto;
     padding: 50px;
 
     background: var(--surface);
@@ -509,6 +486,7 @@ a {
     border: 1px solid var(--border);
     border-radius: var(--radius-lg);
 }
+
 
 .Contact_Info {
     max-width: 600px;
@@ -547,9 +525,7 @@ a {
 }
 
 
-/* =================================
-   Footer
-   ================================= */
+/* Footer */
 
 .Footer {
     width: 100%;
@@ -612,12 +588,7 @@ a {
 }
 
 
-
-
-
-/* ====================================================================================================================================
-   Projects Page
-   ==================================================================================================================================== */
+/* Projects */
 
 .Projects_Page,
 .Project_Page {
@@ -657,9 +628,7 @@ a {
 }
 
 
-/* =================================
-   Projects Grid
-   ================================= */
+/* Project Grid */
 
 .Projects_Grid {
     display: grid;
@@ -668,9 +637,7 @@ a {
 }
 
 
-/* =================================
-   Project Card
-   ================================= */
+/* Project Card */
 
 .Project_Card {
     display: flex;
@@ -788,9 +755,7 @@ a {
 }
 
 
-/* =================================
-   Project Detail
-   ================================= */
+/* Project Header */
 
 .Project_Header {
     margin-bottom: 70px;
@@ -833,9 +798,7 @@ a {
 }
 
 
-/* =================================
-   Project Preview
-   ================================= */
+/* Project Preview */
 
 .Project_Main_Image {
     width: 100%;
@@ -851,31 +814,17 @@ a {
 }
 
 
-/* =================================
-   Project Content
-   ================================= */
+/* Project Info */
 
-.Project_Content {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 80px;
-
+.Project_Info {
     margin-bottom: 80px;
 }
 
-.Project_Content_Label {
-    color: var(--text-dark);
-
-    font-family: var(--font-mono);
-    font-size: 10px;
-    letter-spacing: 0.08em;
-}
-
-.Project_Content_Text {
+.Project_Info_Text {
     max-width: 700px;
 }
 
-.Project_Content_Text h2 {
+.Project_Info_Text h2 {
     margin-bottom: 25px;
 
     color: var(--text);
@@ -885,7 +834,7 @@ a {
     font-weight: 500;
 }
 
-.Project_Content_Text p {
+.Project_Info_Text p {
     margin-bottom: 18px;
 
     color: var(--text-muted);
@@ -895,9 +844,7 @@ a {
 }
 
 
-/* =================================
-   Project Gallery
-   ================================= */
+/* Project Gallery */
 
 .Project_Gallery {
     display: grid;
@@ -919,11 +866,9 @@ a {
 }
 
 
-/* =================================
-   Project Technologies
-   ================================= */
+/* Technologies */
 
-.Project_Technologies {
+.Technologies_Banner {
     margin-bottom: 80px;
     padding: 35px;
 
@@ -933,7 +878,7 @@ a {
     border-radius: 12px;
 }
 
-.Project_Technologies h2 {
+.Technologies_Banner h2 {
     margin-bottom: 25px;
 
     color: var(--text);
@@ -944,9 +889,7 @@ a {
 }
 
 
-/* =================================
-   Responsive
-   ================================= */
+/* Responsive */
 
 @media (max-width: 900px) {
 
@@ -1086,6 +1029,8 @@ a {
 }
 
 
+/* Reduced Motion */
+
 @media (prefers-reduced-motion: reduce) {
 
     html {
@@ -1098,5 +1043,337 @@ a {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
+    }
+}
+
+
+
+
+/* Contact Modal */
+
+.Contact_Modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    visibility: hidden;
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.35s ease,
+        visibility 0.35s ease;
+}
+
+
+/* Full-screen gradient */
+
+.Contact_Modal::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            rgba(141, 164, 255, 0.16),
+            transparent 45%
+        ),
+        linear-gradient(
+            135deg,
+            rgba(11, 11, 11, 0.97),
+            rgba(20, 24, 45, 0.96),
+            rgba(11, 11, 11, 0.98)
+        );
+
+    backdrop-filter: blur(12px);
+}
+
+
+/* Open state */
+
+.Contact_Modal.is-open {
+    visibility: visible;
+    opacity: 1;
+
+    pointer-events: auto;
+}
+
+
+/* Dark clickable backdrop */
+
+.Contact_Modal_Backdrop {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.35);
+}
+
+
+/* Modal */
+
+.Contact_Modal_Content {
+    position: relative;
+    z-index: 1;
+
+    width: min(650px, 100%);
+    max-height: calc(100vh - 60px);
+
+    padding: 45px;
+
+    overflow-y: auto;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(25, 25, 25, 0.97),
+            rgba(14, 14, 14, 0.97)
+        );
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: var(--radius-lg);
+
+    box-shadow:
+        0 30px 100px rgba(0, 0, 0, 0.65),
+        0 0 80px rgba(141, 164, 255, 0.08);
+
+    transform: translateY(25px) scale(0.97);
+
+    transition:
+        transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.Contact_Modal.is-open .Contact_Modal_Content {
+    transform: translateY(0) scale(1);
+}
+
+
+/* Close button */
+
+.Contact_Modal_Close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 36px;
+    height: 36px;
+
+    color: #888;
+    background: transparent;
+
+    border: 1px solid transparent;
+    border-radius: var(--radius-sm);
+
+    font-family: var(--font-display);
+    font-size: 25px;
+    line-height: 1;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.Contact_Modal_Close:hover {
+    color: var(--text);
+
+    background: rgba(255, 255, 255, 0.06);
+
+    border-color: var(--border);
+
+    transform: rotate(4deg);
+}
+
+
+/* Header */
+
+.Contact_Modal_Header {
+    max-width: 500px;
+    margin-bottom: 35px;
+}
+
+.Contact_Modal_Header .Section_Label {
+    display: block;
+    margin-bottom: 15px;
+
+    color: var(--accent);
+}
+
+.Contact_Modal_Header h2 {
+    margin-bottom: 12px;
+
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 7vw, 4rem);
+    font-weight: 600;
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+}
+
+.Contact_Modal_Header p {
+    max-width: 500px;
+
+    color: var(--text-muted);
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* Form */
+
+.Contact_Form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Contact_Form_Row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.Contact_Form label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.Contact_Form label > span {
+    color: #999;
+
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+
+/* Inputs */
+
+.Contact_Form input,
+.Contact_Form textarea {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.035);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+
+    outline: none;
+
+    font-family: var(--font-body);
+    font-size: 14px;
+
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.Contact_Form textarea {
+    min-height: 140px;
+
+    resize: vertical;
+}
+
+.Contact_Form input::placeholder,
+.Contact_Form textarea::placeholder {
+    color: #555;
+}
+
+.Contact_Form input:focus,
+.Contact_Form textarea:focus {
+    background: rgba(255, 255, 255, 0.05);
+
+    border-color: var(--accent);
+
+    box-shadow:
+        0 0 0 3px rgba(141, 164, 255, 0.08);
+}
+
+
+/* Submit */
+
+.Contact_Form_Submit {
+    align-self: flex-start;
+
+    margin-top: 5px;
+    padding: 13px 22px;
+
+    color: #0b0b0b;
+    background: var(--accent);
+
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+
+    font-family: var(--font-display);
+    font-size: 14px;
+    font-weight: 600;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.Contact_Form_Submit:hover {
+    background: #a9baff;
+    border-color: #a9baff;
+
+    box-shadow:
+        0 8px 30px rgba(141, 164, 255, 0.18);
+
+    transform: translateY(-2px);
+}
+
+.Contact_Form_Submit:active {
+    transform: translateY(0);
+}
+
+
+/* Prevent page scrolling while modal is open */
+
+body.modal-open {
+    overflow: hidden;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .Contact_Modal {
+        padding: 15px;
+    }
+
+    .Contact_Modal_Content {
+        max-height: calc(100vh - 30px);
+        padding: 35px 25px 25px;
+    }
+
+    .Contact_Form_Row {
+        grid-template-columns: 1fr;
+    }
+
+    .Contact_Form_Submit {
+        width: 100%;
     }
 }

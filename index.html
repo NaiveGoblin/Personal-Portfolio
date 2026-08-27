@@ -15,9 +15,11 @@
     <header class="Header">
         <nav>
             <ul>
+                <li><a href="index.html">About</a></li>
+                <li class="Header_Spacer">|</li>
                 <li><a href="projects.html">Projects</a></li>
                 <li class="Header_Spacer">|</li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -36,27 +38,30 @@
                     <h1>I make websites.<br>That's it.</h1>
 
                     <p>
-                        I'm Cláudio, a freelance web developer from Portugal.
-                        I've been building websites for around four years,
-                        driven by a genuine passion for making things for the web.
+                        I'm Cláudio, a freelance web developer from Portugal,
+                        also known as NaiveGoblin. I've been building websites
+                        for around four years, driven by a genuine passion for
+                        making things for the web.
                     </p>
 
                     <p>
-                        Websites are my main focus, but I'm naturally curious
-                        about anything creative. I also enjoy working with video,
-                        images and audio, experimenting with game development,
-                        and exploring design in all kinds of forms.
+                        NaiveGoblin is a name I've used through my game development
+                        work, where I've spent years experimenting with games,
+                        tools, and other creative projects. While web development
+                        is my main focus professionally, that background has shaped
+                        the way I approach making things: curious, hands-on, and
+                        always willing to figure things out.
                     </p>
 
                     <p>
                         I like tackling problems head first, keeping things simple,
                         and finding solutions that work without unnecessary
                         complexity. Good work, fair pricing, and a result you're
-                        happy with, that's what matters to me.
+                        happy with — that's what matters to me.
                     </p>
 
                     <span class="Section_Meta">
-                        Freelancer · Portugal · 4 years
+                        Freelancer · Portugal · Web Development
                     </span>
 
                     <div class="Hero_Buttons">
@@ -68,12 +73,14 @@
 
                         <button
                             type="button"
-                            onclick="window.location.href='#contact'">
+                            onclick="openContactModal()">
                             Let's talk →
                         </button>
+
                     </div>
 
                 </div>
+
 
 
                 <div class="Hero_Visual">
@@ -85,7 +92,7 @@
                     <div class="Tag_Groups">
 
                         <div class="Tag_Group">
-                            <span class="Tag_Label">WEB</span>
+                            <span class="Tag_Label">LANGUAGES</span>
 
                             <div class="Tags">
                                 <span>HTML / CSS</span>
@@ -111,7 +118,7 @@
                             <span class="Tag_Label">OUTSIDE THE WEB</span>
 
                             <div class="Tags">
-                                <span>Games</span>
+                                <span>Game Design</span>
                                 <span>Creative Tools</span>
                                 <span>Digital Art</span>
                             </div>
@@ -182,7 +189,7 @@
                         you@example.com
                     </a>
 
-                    <a class="Button" href="mailto:you@example.com">
+                    <a class="Button" type="button" onclick="openContactModal()">
                         Send a message →
                     </a>
                 </div>
@@ -207,12 +214,12 @@
 
                 <div class="Footer_Navigation">
                     <a href="#about">About me</a>
-                    <a href="#contact">Contact</a>
+                    <a Href="#" onclick="openContactModal()">Contact</a>
                     <a href="projects.html">Projects</a>
                 </div>
 
                 <div class="Footer_Socials">
-                    <a href="https://github.com/yourusername">GitHub</a>
+                    <a href="https://github.com/NaiveGoblin">GitHub</a>
                     <a href="https://linkedin.com/in/yourusername">LinkedIn</a>
                 </div>
 
@@ -227,5 +234,8 @@
 
     </footer>
 
+<script src="sources/Contact Form.js"></script>
+
 </body>
+
 </html>
